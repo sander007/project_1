@@ -1,4 +1,8 @@
 Project1::Application.routes.draw do
+  get "user/login"
+
+  get "user/private"
+
   resources :students
 
   resources :users

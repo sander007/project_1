@@ -17,11 +17,7 @@ ActiveRecord::Schema.define(:version => 20110104134006) do
     t.string "last_name",  :limit => 50, :null => false
   end
 
-  create_table "user", :id => false, :force => true do |t|
-    t.string "first_name", :limit => 50, :null => false
-    t.string "last_name",  :limit => 50, :null => false
-    t.string "email",      :limit => 50, :null => false
-    t.string "password",   :limit => 50, :null => false
-  end
+# Could not dump table "user" because of following ArgumentError
+#   invalid date
 
 end
