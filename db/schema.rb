@@ -12,12 +12,13 @@
 
 ActiveRecord::Schema.define(:version => 20110104134006) do
 
-  create_table "student", :id => false, :force => true do |t|
-    t.string "first_name", :limit => 50, :null => false
-    t.string "last_name",  :limit => 50, :null => false
-  end
+# Could not dump table "students" because of following ArgumentError
+#   invalid date
 
-# Could not dump table "user" because of following ArgumentError
+# Could not dump table "users" because of following ArgumentError
+#   invalid date
+
+# Could not dump table "vakken" because of following ArgumentError
 #   invalid date
 
 end

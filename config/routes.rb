@@ -1,4 +1,8 @@
 Project1::Application.routes.draw do
+  resources :vakkens
+
+  resources :vakkens
+
   get "user/login"
 
   get "user/private"
@@ -6,6 +10,8 @@ Project1::Application.routes.draw do
   resources :students
 
   resources :users
+
+  resources :vakkens
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
