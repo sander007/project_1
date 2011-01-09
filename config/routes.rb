@@ -1,4 +1,6 @@
 Project1::Application.routes.draw do
+  resources :klas
+
   get "users/login"
 
   get "users/private"
