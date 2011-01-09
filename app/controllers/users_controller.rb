@@ -83,13 +83,10 @@ class UsersController < ApplicationController
 
 
 def authenticate
-		#User.new(params[:userform]) will create a new object of User, retrieve values from the form and store it variable @user.
-		@user = User.new(params[:usersform])
-        #find records with username,password
-		valid_user = User.find(:first,:conditions => ["first_name = ? and password = ?",@user.first_name, @user.password])
+	@user = User.new(params[:Userform])
+      valid_user = User.find(:first,:conditions => ["first_name = ? and password = ?",@user.first_name, @user.password])
 
-        #if statement checks whether valid_user exists or not
-		if valid_user
+       		if valid_user
         #creates a session with username
 			session[:user_id]=valid_user.first_name
         #redirects the user to our private page.
