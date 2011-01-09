@@ -1,4 +1,6 @@
 Project1::Application.routes.draw do
+  resources :aanwezighedens
+
   resources :students
 
   resources :vakkens
