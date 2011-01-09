@@ -80,4 +80,11 @@ class StudentsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+def private
+  if !session[:user_id]
+	redirect_to :action=> 'login'
+	end
+  end
+
 end

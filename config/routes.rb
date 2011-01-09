@@ -1,4 +1,10 @@
 Project1::Application.routes.draw do
+  get "users/login"
+
+  get "users/private"
+
+  match 'authenticate' => 'users'
+ 
   resources :aanwezighedens
 
   resources :students
