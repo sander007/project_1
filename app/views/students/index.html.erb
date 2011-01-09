@@ -4,6 +4,7 @@
   <tr>
     <th>First name</th>
     <th>Last name</th>
+    <th>Klas</th>
     <th></th>
     <th></th>
     <th></th>
@@ -13,13 +14,14 @@
   <tr>
     <td><%= student.first_name %></td>
     <td><%= student.last_name %></td>
-    <td><%= link_to 'Toon', student %></td>
-    <td><%= link_to 'Pas aan', edit_student_path(student) %></td>
-    <td><%= link_to 'Verwijder', student, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= student.klas_id %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nieuwe Student', new_student_path %>
+<%= link_to 'Nieuwe student', new_student_path %>
